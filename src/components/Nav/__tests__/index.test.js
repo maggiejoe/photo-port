@@ -63,7 +63,7 @@ describe('links are visible', () => {
     />);
 
     expect(getByTestId('link')).toHaveTextContent('Oh Snap!');
-    expect(getByTestId('about')).toHaveTextContent('About me');
+    expect(getByTestId('about')).toHaveTextContent('About Me');
   });
 })
 
@@ -76,7 +76,7 @@ describe('onClick events', () => {
       contactSelected={mockContactSelected}
       setContactSelected={mockSetContactSelected}
     />);
-    fireEvent.click(getByText('About me'))
+    fireEvent.click(getByText('About Me'))
     fireEvent.click(getByText('Contact'))
     fireEvent.click(getByText('Portraits'))
 
